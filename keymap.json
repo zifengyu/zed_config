@@ -5,7 +5,10 @@
       // put key-bindings here if you want them to work only in normal mode
       "H": "pane::ActivatePrevItem",
       "L": "pane::ActivateNextItem",
-      "ctrl-s": "workspace::Save"
+      "|": "pane::SplitRight",
+      "ctrl-s": "workspace::Save",
+      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
+      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"]
     }
   }
 ]
