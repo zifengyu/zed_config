@@ -1,5 +1,11 @@
 [
   {
+    "bindings": {
+      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
+      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"]
+    }
+  },
+  {
     "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
     "bindings": {
       // put key-bindings here if you want them to work only in normal mode
@@ -8,7 +14,14 @@
       "|": "pane::SplitRight",
       "ctrl-s": "workspace::Save",
       "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
-      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"]
+      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
+      "g r": "editor::FindAllReferences"
+    }
+  },
+  {
+    "context": "Editor && mode == full",
+    "bindings": {
+      "enter": "editor::OpenExcerpts"
     }
   }
 ]
